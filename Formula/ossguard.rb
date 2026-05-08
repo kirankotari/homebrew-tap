@@ -11,7 +11,10 @@ class Ossguard < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3.12")
-    venv.pip_install_and_link buildpath
+    # Install from PyPI to pull all dependencies (typer, rich, etc.)
+    system libexec/"bin/pip", "install", "ossguard==#{version}"
+    # Link the ossguard binary into Homebrew's bin
+    bin.install_symlink libexec/"bin/ossguard"
   end
 
   test do
