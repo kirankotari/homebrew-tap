@@ -1,8 +1,8 @@
 class Ossguard < Formula
   desc "One CLI to guard any OSS project with OpenSSF security best practices"
   homepage "https://github.com/kirankotari/ossguard-go"
-  url "https://github.com/kirankotari/ossguard-go/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "cc5c0ff0d3eb4118125f8dd0eeacd67c551a76a1a9ab74ce98b609c2cd076d67"
+  url "https://github.com/kirankotari/ossguard-go/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "d2cb89e94513ace850c94fc0841ce9536cc11c774a3132df1e2063fecf7798ba"
   license "Apache-2.0"
 
   depends_on "go" => :build
